@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>готовый сайт</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Кибербезопасность — Учебный портал</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-green">
+
+<canvas id="matrix"></canvas>
+
+<header>
+    <h1>🛡 Портал по кибербезопасности</h1>
+    <p>Интерактивный учебный проект</p>
+</header>
+
+<section class="themes">
+    <button class="theme-btn green" onclick="setTheme('green')">GREEN</button>
+    <button class="theme-btn red" onclick="setTheme('red')">RED</button>
+    <button class="theme-btn blue" onclick="setTheme('blue')">BLUE</button>
+</section>
+
+<nav>
+    <button onclick="showTab('home')">Главная</button>
+    <button onclick="showTab('threats')">Угрозы</button>
+    <button onclick="showTab('passwords')">Пароли</button>
+    <button onclick="showTab('phishing')">Фишинг</button>
+    <button onclick="showTab('viruses')">Вирусы</button>
+    <button onclick="showTab('social')">Соцсети</button>
+    <button onclick="showTab('wifi')">Wi-Fi</button>
+    <button onclick="showTab('about')">О проекте</button>
+</nav>
+
+<main>
+
+<!-- HOME -->
+<section id="home" class="tab card">
+<h2>Что такое кибербезопасность?</h2>
+
+<p><b>Кибербезопасность</b> — это совокупность методов, технологий и правил,
+направленных на защиту компьютеров, серверов, мобильных устройств, сетей
+и данных от цифровых атак.</p>
+
+<p>В современном мире практически каждый человек ежедневно взаимодействует
+с интернетом. Мы используем социальные сети, онлайн-банкинг, электронную почту,
+мессенджеры, облачные сервисы и игровые платформы.</p>
+
+<p>Это создаёт огромный объём цифровых данных, которые необходимо защищать.
+Нарушение безопасности может привести к:</p>
+
+<ul>
+<li>Краже личных данных</li>
+<li>Финансовым потерям</li>
+<li>Потере доступа к аккаунтам</li>
+<li>Утечке конфиденциальной информации</li>
+</ul>
+
+<h3>Основные цели кибербезопасности:</h3>
+
+<ul>
+<li>Конфиденциальность</li>
+<li>Целостность</li>
+<li>Доступность</li>
+</ul>
+
+<img src="https://cdn-icons-png.flaticon.com/512/2092/2092663.png" class="img">
+</section>
+
+<!-- THREATS -->
+<section id="threats" class="tab card">
+<h2>Основные киберугрозы</h2>
+
+<p>Киберугрозы — это любые действия, направленные на нарушение безопасности
+компьютерных систем, сетей и данных.</p>
+
+<h3>Наиболее распространённые угрозы:</h3>
+
+<ul>
+<li>Фишинг</li>
+<li>Вредоносное ПО</li>
+<li>Социальная инженерия</li>
+<li>DDoS-атаки</li>
+<li>SQL-инъекции</li>
+<li>Брутфорс-атаки</li>
+</ul>
+
+<h3>Пример реальной угрозы:</h3>
+
+<p>Пользователь получает письмо от «банка» с просьбой срочно подтвердить данные.
+При переходе по ссылке открывается поддельный сайт.</p>
+
+<p>Введённые логины и пароли моментально попадают к злоумышленникам.</p>
+
+<img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" class="img">
+</section>
+
+<!-- PASSWORDS -->
+<section id="passwords" class="tab card">
+<h2>Пароли и защита аккаунтов</h2>
+
+<p>Пароль — это первая линия защиты любого аккаунта.
+Его надёжность напрямую влияет на безопасность пользователя.</p>
+
+<h3>Правила создания надёжных паролей:</h3>
+
+<ul>
+<li>Длина не менее 12 символов</li>
+<li>Заглавные и строчные буквы</li>
+<li>Цифры</li>
+<li>Специальные символы</li>
+<li>Отсутствие личной информации</li>
+</ul>
+
+<h3>Двухфакторная аутентификация (2FA)</h3>
+
+<p>2FA — это дополнительный уровень защиты, при котором кроме пароля
+требуется второй код подтверждения.</p>
+
+<img src="https://cdn-icons-png.flaticon.com/512/3064/3064191.png" class="img">
+</section>
+
+<!-- PHISHING -->
+<section id="phishing" class="tab card">
+<h2>Фишинг</h2>
+
+<p><b>Фишинг</b> — это метод мошенничества,
+направленный на получение конфиденциальной информации пользователя.</p>
+
+<h3>Как работает фишинг:</h3>
+
+<ol>
+<li>Создание поддельного сайта</li>
+<li>Рассылка писем</li>
+<li>Имитация официальных сервисов</li>
+<li>Кража данных</li>
+</ol>
+
+<h3>Признаки фишинга:</h3>
+
+<ul>
+<li>Срочность</li>
+<li>Ошибки в тексте</li>
+<li>Подозрительные ссылки</li>
+<li>Запрос личных данных</li>
+</ul>
+
+<img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" class="img">
+</section>
+
+<!-- VIRUSES -->
+<section id="viruses" class="tab card">
+<h2>Компьютерные вирусы и антивирусы</h2>
+
+<p>Вирус — это вредоносная программа, способная самостоятельно распространяться
+и наносить вред устройствам.</p>
+
+<h3>Типы вирусов:</h3>
+<ul>
+<li>Трояны</li>
+<li>Черви</li>
+<li>Шпионские программы</li>
+<li>Руткиты</li>
+<li>Рекламное ПО</li>
+</ul>
+
+<h3>Популярные антивирусы и зачем они нужны:</h3>
+
+<div class="antivirus-grid">
+
+  <div class="av-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3064/3064193.png" alt="Kaspersky">
+    <p><b>Kaspersky</b></p>
+    <p>Защита от вирусов, фишинга, троянов, сетевых атак</p>
+  </div>
+
+  <div class="av-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Avast">
+    <p><b>Avast</b></p>
+    <p>Бесплатный антивирус, защита в реальном времени</p>
+  </div>
+
+  <div class="av-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3064/3064191.png" alt="Avira">
+    <p><b>Avira</b></p>
+    <p>Облачная защита, высокая скорость работы</p>
+  </div>
+
+  <div class="av-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3064/3064195.png" alt="ESET">
+    <p><b>ESET</b></p>
+    <p>Продвинутая защита от сложных атак</p>
+  </div>
+
+</div>
+
+
+</section>
+
+<!-- SOCIAL -->
+<section id="social" class="tab card">
+<h2>Безопасность в социальных сетях</h2>
+
+<p>Социальные сети являются одной из главных целей киберпреступников.</p>
+
+<h3>Правила:</h3>
+<ul>
+<li>Не публиковать персональные данные</li>
+<li>Не принимать незнакомцев</li>
+<li>Не переходить по подозрительным ссылкам</li>
+<li>Использовать 2FA</li>
+</ul>
+
+<img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" class="img">
+</section>
+
+<!-- WIFI -->
+<section id="wifi" class="tab card">
+<h2>Безопасность Wi-Fi</h2>
+
+<p>Открытые Wi-Fi сети являются крайне опасными.</p>
+
+<h3>Рекомендации:</h3>
+<ul>
+<li>Использовать VPN</li>
+<li>Менять стандартные пароли</li>
+<li>Использовать WPA3</li>
+</ul>
+
+<img src="https://cdn-icons-png.flaticon.com/512/483/483947.png" class="img">
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="tab card">
+<h2>О проекте</h2>
+Данный проект разработан в учебных целях для повышения уровня цифровой грамотности.
+
+Его задача — помочь пользователям понять, как защитить себя в интернете.
+<p>Поддержка проекта: <a href="https://t.me/celionsss" target="_blank">@celionsss</a></p>
+</section>
+
+<!-- FINAL -->
+<section id="final" class="tab final-card">
+<h2>🏁 Итог + Викторина</h2>
+<div id="quiz"></div>
+<button onclick="checkQuiz()">Проверить</button>
+<div id="quiz-result"></div>
+</section>
+
+</main>
+
+<div class="final-wrapper">
+<button class="final-btn" onclick="showTab('final')">🏁 ПЕРЕЙТИ К ИТОГУ</button>
+</div>
+ 
+  
+
+<footer>
+<p>© 2026 Учебный портал по кибербезопасности</p>
+</footer>
+ 
+
+<script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
